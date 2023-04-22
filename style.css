@@ -138,3 +138,52 @@ section.about .text-contents p.fir span {
 section.about .text-contents p.sec {
   color: teal;
 }
+
+section.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+
+  margin: 32px auto;
+}
+
+section.menu .image-container {
+  width: 40%;
+  margin-left: 10%;
+}
+
+section.menu .text-contents {
+  width: 40%;
+  margin-left: 10%;
+}
+
+section.menu .image-container img {
+  height: 600px;
+}
+
+section.menu .text-contents h1 {
+  font-size: 32px;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: 5px;
+}
+
+section.menu .text-contents .menu-item {
+  /* width: 90%; */
+  margin: auto;
+  margin-bottom: 32px;
+}
+
+section.menu .text-contents .menu-item h4 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+section.menu .text-contents .menu-item p {
+  color: #777;
+}
