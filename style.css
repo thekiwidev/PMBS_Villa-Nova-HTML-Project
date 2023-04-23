@@ -9,6 +9,11 @@
   font-family: "Times New Roman", Georgia, Serif;
 }
 
+div.container {
+  max-width: 1150px;
+  margin: auto;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -80,90 +85,81 @@ section.banner h1 {
   letter-spacing: 5px;
 }
 
-section.about {
+section.about .container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   gap: 24px;
 
   margin: 32px auto;
 }
 
-section.about .image-container {
-  width: 40%;
-  margin-left: 10%;
+section.about .container .image-container {
+  margin-right: 64px;
 }
 
-section.about .image-container img {
-  width: 450px;
-}
-
-section.about .text-contents {
-  width: 40%;
-  margin-right: 10%;
-}
-
-section.about .text-contents h1 {
+section.about .container .text-contents h1 {
   font-size: 32px;
   font-weight: lighter;
+  text-transform: capitalize;
   text-align: center;
   margin-bottom: 24px;
   letter-spacing: 5px;
 }
 
-section.about .text-contents h5 {
+section.about .container .text-contents h5 {
   font-size: 18px;
   margin-bottom: 24px;
   text-align: center;
   color: teal;
 }
 
-section.about .text-contents p {
+section.about .container .text-contents p {
   margin-bottom: 18px;
   line-height: 1.5;
 
   text-align: justify;
+
+  font-size: 18px;
 }
 
-section.about .text-contents p.fir {
-  font-weight: bold;
-}
-
-section.about .text-contents p.fir span {
+section.about .container .text-contents p.fir span {
   background: #f1f1f1;
   padding: 5px 10px;
 }
 
-section.about .text-contents p.sec {
+section.about .container .text-contents p.sec {
   color: teal;
 }
 
-section.menu {
+section.menu .container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   gap: 24px;
 
   margin: 32px auto;
 }
 
-section.menu .image-container {
+/* section.menu .container .image-container {
   width: 40%;
   margin-left: 10%;
+} */
+
+section.menu .container .text-contents {
+  margin-right: 34px;
 }
 
-section.menu .text-contents {
-  width: 40%;
-  margin-left: 10%;
-}
-
-section.menu .image-container img {
+section.menu .container .image-container img {
+  width: 600px;
   height: 600px;
+  object-fit: contain;
 }
 
-section.menu .text-contents h1 {
+section.menu .container .text-contents h1 {
+  text-transform: capitalize;
   font-size: 32px;
   font-weight: lighter;
   text-align: center;
@@ -171,19 +167,32 @@ section.menu .text-contents h1 {
   letter-spacing: 5px;
 }
 
-section.menu .text-contents .menu-item {
+section.menu .container .text-contents .menu-item {
   /* width: 90%; */
   margin: auto;
   margin-bottom: 32px;
 }
 
-section.menu .text-contents .menu-item h4 {
+section.menu .container .text-contents .menu-item h4 {
   margin-bottom: 16px;
   font-size: 18px;
   letter-spacing: 5px;
   font-weight: 300;
 }
 
-section.menu .text-contents .menu-item p {
+section.menu .container .text-contents .menu-item p {
   color: #777;
+}
+
+section.contact .container h1 {
+  letter-spacing: 5px;
+  text-transform: capitalize;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 32px 0 64px;
+}
+
+section.contact .container h4 {
+  margin: 32px 0;
+  color: teal;
 }
