@@ -196,3 +196,45 @@ section.contact .container h4 {
   margin: 32px 0;
   color: teal;
 }
+
+section.contact .container form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+section.contact .container form input {
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  border: none;
+  border-bottom: 1px solid #999;
+}
+
+section.contact .container form textarea {
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  border: none;
+  border-bottom: 1px solid #999;
+  resize: none;
+  height: 150px;
+}
+
+section.contact .container form button {
+  padding: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #c4c4c4;
+  border: none;
+  cursor: pointer;
+}
+
+section.contact .container form button:hover {
+  background: #cecece;
+}
+
+footer {
+  padding: 64px;
+  text-align: center;
+  background: #c4c4c4;
+  margin-top: 64px;
+}
