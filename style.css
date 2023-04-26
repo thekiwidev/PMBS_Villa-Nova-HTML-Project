@@ -6,7 +6,10 @@
   text-decoration: none;
   list-style: none;
 
-  font-family: "Times New Roman", Georgia, Serif;
+  font-family: "Ysabeau", sans-serif;
+
+  scroll-behavior: smooth;
+  transition: 0.3s all ease;
 }
 
 div.container {
@@ -22,17 +25,22 @@ header {
   padding: 10px 24px;
 
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
 
   background: #fff;
 
   z-index: 1;
+
+  box-shadow: 3px 0 15px #9e9e9e;
 }
 
 header a.logo {
   letter-spacing: 5px;
   color: #000;
   padding: 10px;
+  font-weight: bold;
 }
 
 header a.logo:hover {
@@ -101,7 +109,7 @@ section.about .container .image-container {
 
 section.about .container .text-contents h1 {
   font-size: 32px;
-  font-weight: lighter;
+  font-weight: 300;
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 24px;
@@ -124,13 +132,46 @@ section.about .container .text-contents p {
   font-size: 18px;
 }
 
-section.about .container .text-contents p.fir span {
-  background: #f1f1f1;
+section.about .container .text-contents p.third span {
+  background: teal;
+  color: #fff;
   padding: 5px 10px;
+}
+section.menu .container .text-contents a,
+section.about .container .text-contents a {
+  color: teal;
+  display: inline-block;
+  margin-top: 20px;
+
+  font-weight: bold;
+}
+
+section.menu .container .text-contents a:hover,
+section.about .container .text-contents a:hover {
+  text-decoration: underline;
 }
 
 section.about .container .text-contents p.sec {
   color: teal;
+}
+
+section.menu-para {
+  margin-top: 82px;
+}
+
+section.menu-para h1 {
+  font-weight: 400;
+  font-size: 64px;
+
+  margin-bottom: 64px;
+}
+
+section.menu-para p {
+  display: inline-block;
+  width: 45%;
+  text-align: justify;
+
+  margin: 2%;
 }
 
 section.menu .container {
@@ -140,7 +181,7 @@ section.menu .container {
 
   gap: 24px;
 
-  margin: 32px auto;
+  margin: 64px auto;
 }
 
 /* section.menu .container .image-container {
@@ -161,7 +202,7 @@ section.menu .container .image-container img {
 section.menu .container .text-contents h1 {
   text-transform: capitalize;
   font-size: 32px;
-  font-weight: lighter;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 24px;
   letter-spacing: 5px;
@@ -177,11 +218,11 @@ section.menu .container .text-contents .menu-item h4 {
   margin-bottom: 16px;
   font-size: 18px;
   letter-spacing: 5px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 section.menu .container .text-contents .menu-item p {
-  color: #777;
+  color: #555;
 }
 
 section.contact .container h1 {
@@ -206,6 +247,7 @@ section.contact .container form {
 section.contact .container form input {
   margin-bottom: 16px;
   padding: 16px 20px;
+  font-size: 16px;
   border: none;
   border-bottom: 1px solid #999;
 }

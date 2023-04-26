@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mukhtar's Catering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <a href="./index.html" class="logo">Mukhtar's Catering</a>
       <nav>
-        <a href="./pages/about.html">about</a>
-        <a href="./pages/menu.html">menu</a>
-        <a href="./pages/contact.html">contact</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#contact">contact</a>
       </nav>
     </header>
     <section class="banner">
@@ -22,7 +28,7 @@
       </div>
       <h1>Mukhtar's Catering</h1>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="image-container">
           <img src="./images/tablesetting2.jpg" alt="tablesetting2" />
@@ -31,26 +37,25 @@
           <h1>About Mukhtar's Catering</h1>
           <h5>Tradition since 1889</h5>
           <p class="fir">
-            The Mukhtar's Catering was founded in blabla by Mr. Mukhtar in lorem
-            ipsum dolor sit amet, consectetur adipiscing elit consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute iruredolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur.We only use
-            <span>seasonal</span> ingredients.
+            At Mukhtar's Catering, where we specialize in providing delicious
+            meals for your special occasions. We are a family-owned business
+            that has been serving the community for [insert number] years. Our
+            mission is to provide our customers with the highest quality food
+            and excellent service at an affordable price.
           </p>
           <p class="sec">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum consectetur adipiscing
-            elit, sed do eiusmod temporincididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
+            At Mukhtar's Catering, we believe that food is an important part of
+            any celebration. That's why we use only the freshest ingredients and
+            traditional cooking techniques to prepare our meals. We take pride
+            in our ability to create dishes that are not only delicious but also
+            visually appealing.
           </p>
+          <p class="third">We only use <span>seasonal</span> ingredients.</p>
+          <a href="./pages/about.html"> Learn More </a>
         </div>
       </div>
     </section>
-    <section class="menu">
+    <section class="menu" id="menu">
       <div class="container">
         <div class="text-contents">
           <h1>Our Menu</h1>
@@ -80,13 +85,14 @@
             <h4>Blueberry Pancakes</h4>
             <p>With syrup, butter and lots of berries 8.50</p>
           </div>
+          <a href="./pages/about.html"> See More </a>
         </div>
         <div class="image-container">
           <img src="./images/tablesetting.jpg" alt="tablesetting" />
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <h1>contact</h1>
         <p>
@@ -109,6 +115,6 @@
         </form>
       </div>
     </section>
-    <footer>Powered by <a href="./index.html">Mukhtar</a></footer>
+    <footer>Powered by <a href="./index.html">PMBS</a></footer>
   </body>
 </html>
